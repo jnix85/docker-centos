@@ -5,5 +5,4 @@ LABEL maintainer="jparks@jpconsulted.com"
 RUN dnf install -y centos-release-stream && \
     dnf distro-sync -y && \
     dnf upgrade -y && \
-    dnf install -y epel-release  && \
     dnf clean all

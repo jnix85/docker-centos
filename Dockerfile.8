@@ -3,5 +3,4 @@ FROM centos:8
 LABEL maintainer="jparks@jpconsulted.com"
 
 RUN dnf upgrade -y && \
-    dnf install -y epel-release && \
     dnf clean all
