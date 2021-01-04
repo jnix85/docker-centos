@@ -1,0 +1,7 @@
+FROM centos:7
+
+LABEL maintainer="jparks@jpconsulted.com"
+
+RUN yum upgrade -y && \
+    yum install -y epel-release && \
+    yum clean all
